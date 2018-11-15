@@ -13,7 +13,7 @@ public class Hero extends Mover {
 
     public Hero() {
         super();
-        gravity = 9.8;
+        gravity = 20.0;
         acc = 0.6;
         drag = 0.8;
         setImage("p1.png");
@@ -39,14 +39,14 @@ public class Hero extends Mover {
     }
 
     public void handleInput() {
-        if (Greenfoot.isKeyDown("w")) {
-            velocityY = -10;
+        if (Greenfoot.isKeyDown(" ")) {
+            velocityY = -5;
         }
 
         if (Greenfoot.isKeyDown("a")) {
-            velocityX = -2;
+            velocityX = -5;
         } else if (Greenfoot.isKeyDown("d")) {
-            velocityX = 2;
+            velocityX = 10;
         }
     }
 
