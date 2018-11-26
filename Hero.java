@@ -46,13 +46,14 @@ public class Hero extends Mover {
 
         for (Actor enemy : getIntersectingObjects(Enemy.class)) {
             if (enemy != null) {
-                getWorld().removeObject(this);
+                dood();
                 break;
             }
         }
     }
     
     public void dood() {
+        
         lives--;
         if (lives > 0) {
             setLocation(200, 700);
