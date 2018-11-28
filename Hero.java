@@ -20,7 +20,7 @@ public class Hero extends Mover {
 
     private String direction = "right";
     
-    public int lives = 1;
+    public int lives = 2;
 
 
     public Hero() {
